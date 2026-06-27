@@ -98,6 +98,25 @@ Final Verdict
 
 **True Positive – Suspicious Reconnaissance Tool Detected**
 
+## Indicators of Compromise (IOCs)
+
+| IOC Type   | Value                                            |
+| ---------- | ------------------------------------------------ |
+| Host       | `win-3450`                                       |
+| Process    | `powershell.exe`                                 |
+| File Name  | `PowerView.ps1`                                  |
+| File Path  | `C:\Users\michael.ascot\Downloads\PowerView.ps1` |
+| Event Code | `11`                                             |
+| Process ID | `9060`                                           |
+
+## MITRE ATT&CK Mapping
+
+| Tactic    | Technique                                     | ID        |
+| --------- | --------------------------------------------- | --------- |
+| Execution | Command and Scripting Interpreter: PowerShell | T1059.001 |
+
+
+
 ### Key Findings
 A PowerShell script named PowerView.ps1 was created in the Downloads folder on host win-3450.
 The file creation event was initiated by powershell.exe.
