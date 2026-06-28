@@ -37,7 +37,6 @@ Rather than documenting every alert generated during the simulation, this reposi
 * IOC Identification
 * Alert Triage
 
-📁 Folder: `Case-01-Malicious-Email-Attachment`
 
 ---
 
@@ -53,7 +52,6 @@ Rather than documenting every alert generated during the simulation, this reposi
 * Threat Hunting
 * Alert Triage
 
-📁 Folder: `Case-02-PowerShell-Script-Creation`
 
 ---
 
@@ -69,7 +67,6 @@ Rather than documenting every alert generated during the simulation, this reposi
 * Command Line Analysis
 * Threat Hunting
 
-📁 Folder: `Case-03-Suspicious-DNS-Activity`
 
 ---
 
