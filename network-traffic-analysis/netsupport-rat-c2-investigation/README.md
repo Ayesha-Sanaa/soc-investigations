@@ -151,7 +151,7 @@ All of it was legitimate Microsoft stuff — `login.microsoftonline.com`, `setti
 Nothing suspicious in DNS at all. Which also tells you something — the C2 channel itself never shows up in DNS, because it connects straight to a hardcoded IP. No domain to block, no domain to flag.
 
 
-## Findings
+## My Findings
 
 | Category | Detail |
 |---|---|
@@ -179,7 +179,7 @@ Nothing suspicious in DNS at all. Which also tells you something — the C2 chan
 | Server header | NetSupport Gateway/1.92 (Windows NT) |
 | C2 strings | CMD=POLL, CMD=ENCD |
 
-## Recommendations
+## My Recommendations
 
 - Isolate DESKTOP-TEYQ2NR.
 - Reset the `brolf` account's credentials.
