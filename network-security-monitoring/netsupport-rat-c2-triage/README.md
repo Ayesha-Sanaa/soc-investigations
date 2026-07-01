@@ -147,7 +147,26 @@ This is not a false positive. The host needs to be isolated immediately.
 - **Block** ASN `AS200823` (MHost LLC) if no legitimate business dependency exists
 - **Hunt** for other internal hosts communicating with the same ASN or using `NetSupport Manager/1.3` User-Agent
 - **Search** endpoint for dropper filenames: `RateConf.exe`, `Order.exe`, `RateConfirm.exe`
+- **Deploy** the following Snort rule to detect future NetSupport RAT beacons:
 
+
+alert http any any -> any any (
+
+  msg:"NetSupport RAT Gateway Beacon Detected";
+  
+  content:"NetSupport Manager/1.3";
+  
+  http_header;
+  
+  content:"/fakeurl.htm";
+  
+  http_uri;
+  
+  sid:9000001;
+  
+  rev:1;
+  
+)
 
 ---
 
