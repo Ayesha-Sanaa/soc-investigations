@@ -185,7 +185,7 @@ Nothing suspicious in DNS at all. Which also tells you something — the C2 chan
 - Reset the `brolf` account's credentials.
 - Block 45.131.214.85 at the firewall.
 - Detect on HTTP traffic over port 443 that never does a TLS handshake — that mismatch was the clearest signal in the whole case.
-- Figure out separately how NetSupport Manager got on the machine in the first place — nothing in this capture shows the actual infection happening, only the ongoing C2.
+
 
 
 
