@@ -53,9 +53,11 @@ Downloaded and extracted the dataset. The main file used for the investigation w
 ---
 
 ### Step 2 — Inspect the Dataset
+```python
 
 wc -l empire_persistence_registry_modification_run_keys_elevated_user_2020-07-22001847.json
 head -1 empire_persistence_registry_modification_run_keys_elevated_user_2020-07-22001847.json | python3 -m json.tool
+```
 
 <img width="1913" height="827" alt="wc" src="https://github.com/user-attachments/assets/72afd7ec-264e-414e-9f64-d5d858cdfeda" />
 
@@ -71,7 +73,7 @@ Checked the total number of events (657) and reviewed the first event to underst
 
 Filtered **Sysmon Event IDs 12 and 13** to find registry activity.
 
-<img width="1913" height="827" alt="wc" src="https://github.com/user-attachments/assets/363c034c-aef3-405e-b2f9-18faaf78f716" />
+<img width="1546" height="831" alt="03-registry-events" src="https://github.com/user-attachments/assets/80f90839-512f-49c4-8741-582d77287f98" />
 
 
 **Findings**
@@ -146,7 +148,8 @@ Decoded the embedded C2 address.
 
 ### Step 7 — Review the Timeline
 
-# List Event IDs and timeline
+ List Event IDs and timeline
+<img width="1441" height="361" alt="07-logon-check" src="https://github.com/user-attachments/assets/33c71eaf-3c9c-415a-96d2-238b5fed6230" />
 
 
 Reviewed the available logs and timeline.
